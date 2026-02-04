@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="./assets/style.css">
+    <title>Scratch Game</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <script src="./script/index.js" defer></script>
+
 <body>
     <div class="landing">
         <div id="title">Advanture In The Tample</div>
@@ -18,15 +19,25 @@
         </div>
     </div>
     <div id="arena">
-        <img src="./assets/images/main-char.png" alt="" srcset="" id="sprite">
+        <div id="sprite">
+            <img src="./assets/images/main-char.png" alt="" srcset="" id="char">
+            <div id="message"></div>
+        </div>
         <img src="https://i.pinimg.com/736x/da/ae/ce/daaece34463f6b599008ced4b7c0c280.jpg" alt="" class="background">
     </div>
+
+<div id="messageBox">
+    <p>What Is Your Name?</p>
+    <input type="text" name="name" id="textPlace">
+    <button type="submit" id="ok">Ok</button>
+</div>
+
     <button onclick="resetPosition()" id="buttonReset">Back to home</button>
     <audio id="sound" src="recording1.mp3"></audio>
 
 </body>
 <style>
-   
+
 </style>
 
 </html>
